@@ -218,6 +218,7 @@ if (isset($_SESSION['user_id'])) {
 
 ?>
 </body>
+</html>
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js">
@@ -252,7 +253,7 @@ if (isset($_SESSION['user_id'])) {
     });
     document.querySelector('.container').style.maxWidth = '1200px';
 </script>
-</body>
+
 
     <style>
     .quantity-container {
@@ -295,4 +296,4 @@ if (isset($_SESSION['user_id'])) {
         cursor: pointer;
     }
     </style>
-    </html>
+ 

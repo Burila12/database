@@ -75,6 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <footer>
         <p>&copy; 2023 </p>
 </footer>
+</html>
 <style>
 footer {
     background-color: transparent;
@@ -142,4 +143,3 @@ header {
 }
 
 </style>
-</html>

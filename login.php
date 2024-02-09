@@ -80,8 +80,10 @@ if(isset($_SESSION['log_in'])){
 <footer>
         <p>&copy; 2023 </p>
 </footer>
+</html>
 <style>
-footer {
+footer 
+{
     background-color: transparent;
     color: #fff;
     text-align: center;
@@ -89,5 +91,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}</style>
-</html>
+}
+</style>

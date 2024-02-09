@@ -48,7 +48,7 @@ if(!isset($_SESSION['login'])){
  $run = mysqli_query($con,$query);  
  ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -138,6 +138,7 @@ if(!isset($_SESSION['login'])){
     </div>
   </section>
 </div>
+</html>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js">
     new Swiper(".swiper", {
         loop: true,
@@ -178,4 +179,3 @@ if(!isset($_SESSION['login'])){
         cartDropdown.style.display = (cartDropdown.style.display === 'block') ? 'none' : 'block';
     });
 </script>
-</html>

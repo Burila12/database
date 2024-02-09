@@ -170,10 +170,6 @@ if(!isset($_SESSION['login'])){
         }
     });
     document.querySelector('.container').style.maxWidth = '1200px';
-</script>
-
-<script>
-
     document.getElementById('cartButton').addEventListener('click', function () {
         var cartDropdown = document.getElementById('cartDropdown');
         cartDropdown.style.display = (cartDropdown.style.display === 'block') ? 'none' : 'block';

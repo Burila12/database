@@ -5,7 +5,7 @@ if(! isset($_SESSION['log_in'])){
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <header>
     <img src="book.png" alt="Logo">

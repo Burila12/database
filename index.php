@@ -11,7 +11,7 @@ if(! isset($_SESSION['log_in'])){
  $run = mysqli_query($con,$query);  
  ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <link rel="stylesheet" href="style.css">
 	<title>Login</title>
@@ -97,7 +97,8 @@ if(! isset($_SESSION['log_in'])){
      
 <br><br>
 <br><br>
-
+</body>
+</html>
 <style>
 * body {
     width: 100%;
@@ -167,5 +168,3 @@ table {
 }
 
 </style>     
-</body>
-</html>

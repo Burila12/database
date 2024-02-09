@@ -10,7 +10,7 @@ if(! isset($_SESSION['log_in'])){
  $run = mysqli_query($con,$query);  
  ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <link rel="stylesheet" href="style.css">
 	<title>Login</title>
@@ -51,21 +51,6 @@ if(! isset($_SESSION['log_in'])){
     <a href="index.php"class="insert-button">Customer</a>
 <br><br>
 <br><br>
-   <script>
-    //VALIDATION YES OR NO
-    function confirmAction(customerId, action) {
-    var actionText = action === "delete" ? "delete this item" : "update this item";
-    if (confirm("Are you sure you want to " + actionText + "?")) {
-        if (action === "delete") {
-            window.location = "delete.php?id=" + customerId + "&table=items";
-        } else if (action === "update") {
-            window.location = "update1.php?id=" + customerId;
-        }
-    } else {
-       
-    }
-}
-</script> 
 <?php
 if (mysqli_num_rows($run) > 0) {
     echo '<table border="1" cellspacing="0" cellpadding="0">';
@@ -108,7 +93,7 @@ if (mysqli_num_rows($run) > 0) {
 
  <br><br>
  <br><br>
- 
+ </html>
 <style>
 
 * body {
@@ -182,4 +167,18 @@ table {
 
 
 </style>     
-</html>
+<script>
+    //VALIDATION YES OR NO
+    function confirmAction(customerId, action) {
+    var actionText = action === "delete" ? "delete this item" : "update this item";
+    if (confirm("Are you sure you want to " + actionText + "?")) {
+        if (action === "delete") {
+            window.location = "delete.php?id=" + customerId + "&table=items";
+        } else if (action === "update") {
+            window.location = "update1.php?id=" + customerId;
+        }
+    } else {
+       
+    }
+}
+</script> 
